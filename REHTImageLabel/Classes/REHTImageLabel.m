@@ -55,7 +55,7 @@
 	
 	if (_headImageView) {
 		[_contentView addSubview:_headImageView];
-		_headImageView.frame = (CGRect){CGPointMake(0, ((textHeight + _lineMargin - _headImageView.image.size.height) / 2.f)), _headImageView.image.size};
+		_headImageView.frame = (CGRect){CGPointMake(0, ((textHeight - _headImageView.image.size.height) / 2.f)), _headImageView.image.size};
 		
 		CGRect frame = lineLabel.frame;
 		frame.origin.x = CGRectGetMaxX(_headImageView.frame) + _headMargin;
@@ -67,7 +67,7 @@
 	if (_label.numberOfLines != 1 && CGRectGetMaxX(lineLabel.frame) > size.width) {
 		while(1) {
 			CGRect frame = lineLabel.frame;
-			frame.origin.y = ((textHeight + _lineMargin) * currentLine) + (_lineMargin / 2.f);
+			frame.origin.y = ((textHeight + _lineMargin) * currentLine);
 			frame.size.width = size.width - frame.origin.x;
 			lineLabel.frame = frame;
 			[lineLabel cutAttributedTextWithWidth];
@@ -89,8 +89,8 @@
 	}
 	[lineLabel sizeToFit];
 	
-	if (_headImageView) {
-		[_contentView addSubview:_headImageView];
+	if (_tailImageView) {
+		[_contentView addSubview:_tailImageView];
 		
 		CGFloat offsetX = CGRectGetMaxX(lineLabel.frame) + _tailMargin;
 		CGFloat offsetY = lineLabel.frame.origin.y + ((lineLabel.frame.size.height - _tailImageView.image.size.height) / 2.f);
@@ -112,7 +112,7 @@
 	if (lineLabel.frame.origin.y == 0) {
 		size.width = CGRectGetMaxX(lineLabel.frame) + CGRectGetWidth(_tailImageView.frame);
 	}
-	size.height = CGRectGetMaxY((_tailImageView ?: lineLabel).frame);
+	size.height = MAX(CGRectGetMaxY(_tailImageView.frame), CGRectGetMaxY(lineLabel.frame));
 	
 	CGRect frame = _contentView.frame;
 	frame.size = size;
