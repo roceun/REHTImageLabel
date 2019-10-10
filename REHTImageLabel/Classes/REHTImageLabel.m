@@ -55,7 +55,7 @@
 	
 	if (_headImageView) {
 		[_contentView addSubview:_headImageView];
-		_headImageView.frame = (CGRect){CGPointMake(0, ((textHeight - _headImageView.image.size.height) / 2.f)), _headImageView.image.size};
+		_headImageView.frame = (CGRect){CGPointMake(0, ((textHeight - _headImageView.frame.size.height) / 2.f)), _headImageView.frame.size};
 		
 		CGRect frame = lineLabel.frame;
 		frame.origin.x = CGRectGetMaxX(_headImageView.frame) + _headMargin;
@@ -93,20 +93,20 @@
 		[_contentView addSubview:_tailImageView];
 		
 		CGFloat offsetX = CGRectGetMaxX(lineLabel.frame) + _tailMargin;
-		CGFloat offsetY = lineLabel.frame.origin.y + ((lineLabel.frame.size.height - _tailImageView.image.size.height) / 2.f);
-		if (size.width - offsetX < _tailImageView.image.size.width) {
+		CGFloat offsetY = lineLabel.frame.origin.y + ((lineLabel.frame.size.height - _tailImageView.frame.size.height) / 2.f);
+		if (size.width - offsetX < _tailImageView.frame.size.width) {
 			if (_label.numberOfLines == currentLine + 1) {
 				CGRect frame = lineLabel.frame;
-				frame.size.width = size.width - _tailImageView.image.size.width - _tailMargin;
+				frame.size.width = frame.size.width - _tailImageView.frame.size.width - _tailMargin;
 				lineLabel.frame = frame;
 				
 				offsetX = lineLabel.frame.origin.x + lineLabel.frame.size.width + _tailMargin;
 			} else {
 				offsetX = 0;
-				offsetY += _tailImageView.image.size.height;
+				offsetY += _tailImageView.frame.size.height;
 			}
 		}
-		_tailImageView.frame = (CGRect){CGPointMake(offsetX, offsetY), _tailImageView.image.size};
+		_tailImageView.frame = (CGRect){CGPointMake(offsetX, offsetY), _tailImageView.frame.size};
 	}
 	
 	if (lineLabel.frame.origin.y == 0) {
