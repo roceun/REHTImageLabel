@@ -30,6 +30,15 @@
 
 //MARK: -
 
+static inline UILabel * labelWithAttributedText(NSAttributedString *attributedText)
+{
+    UILabel *label = [[UILabel alloc] init];
+    label.attributedText = attributedText;
+    label.numberOfLines = 1;
+    [label sizeToFit];
+    return label;
+}
+
 - (void)makeViewWithContentWidth:(CGFloat)width
 {
 	[_contentView removeFromSuperview];
@@ -42,10 +51,8 @@
 	_contentView = [[UIView alloc] init];
 	[self addSubview:_contentView];
 	
-	UILabel *lineLabel = [[UILabel alloc] init];
-	lineLabel.attributedText = _label.attributedText;
-	lineLabel.numberOfLines = 1;
-	[lineLabel sizeToFit];
+    UILabel *lineLabel = labelWithAttributedText(_label.attributedText);
+    lineLabel.textAlignment = _label.textAlignment;
 	
 	const CGFloat textHeight = lineLabel.frame.size.height;
 	
@@ -77,13 +84,21 @@
 				index >= _label.attributedText.length) {
 				break;
 			}
+            
+            if (_label.lineBreakMode == NSLineBreakByWordWrapping) {
+                NSUInteger location = [lineLabel.attributedText.string rangeOfCharacterFromSet:[NSCharacterSet whitespaceCharacterSet]
+                                                                                       options:NSBackwardsSearch].location;
+                if (location != NSNotFound) {
+                    index -= (lineLabel.attributedText.length - location);
+                    lineLabel.attributedText = [lineLabel.attributedText attributedSubstringFromRange:NSMakeRange(0, location)];
+                }
+            }
 			
 			currentLine++;
 			
-			lineLabel = [[UILabel alloc] init];
-			lineLabel.attributedText = [_label.attributedText attributedSubstringFromRange:NSMakeRange(index, _label.attributedText.length - index)];
-			lineLabel.numberOfLines = 1;
-			[lineLabel sizeToFit];
+			lineLabel = labelWithAttributedText([_label.attributedText
+                                                 attributedSubstringFromRange:NSMakeRange(index, _label.attributedText.length - index)]);
+            lineLabel.textAlignment = _label.textAlignment;
 			[_contentView addSubview:lineLabel];
 		}
 	}
