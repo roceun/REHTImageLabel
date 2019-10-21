@@ -89,7 +89,7 @@ static inline UILabel * labelWithAttributedText(NSAttributedString *attributedTe
                 NSUInteger location = [lineLabel.attributedText.string rangeOfCharacterFromSet:[NSCharacterSet whitespaceCharacterSet]
                                                                                        options:NSBackwardsSearch].location;
                 if (location != NSNotFound) {
-                    index -= (lineLabel.attributedText.length - location);
+                    index -= (lineLabel.attributedText.length - location - 1);
                     lineLabel.attributedText = [lineLabel.attributedText attributedSubstringFromRange:NSMakeRange(0, location)];
                 }
             }
