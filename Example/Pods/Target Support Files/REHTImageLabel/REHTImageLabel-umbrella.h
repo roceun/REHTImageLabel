@@ -10,7 +10,9 @@
 #endif
 #endif
 
+#import "REHTImageArrayLabel.h"
 #import "REHTImageLabel.h"
+#import "UILabel+RECutText.h"
 
 FOUNDATION_EXPORT double REHTImageLabelVersionNumber;
 FOUNDATION_EXPORT const unsigned char REHTImageLabelVersionString[];

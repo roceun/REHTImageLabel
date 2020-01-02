@@ -6,6 +6,7 @@
 //
 
 #import "REHTImageLabel.h"
+#import "UILabel+RECutText.h"
 
 @interface REHTImageLabel () {
 	UIView *_contentView;
@@ -30,15 +31,6 @@
 
 //MARK: -
 
-static inline UILabel * labelWithAttributedText(NSAttributedString *attributedText)
-{
-    UILabel *label = [[UILabel alloc] init];
-    label.attributedText = attributedText;
-    label.numberOfLines = 1;
-    [label sizeToFit];
-    return label;
-}
-
 - (void)makeViewWithContentWidth:(CGFloat)width
 {
 	[_contentView removeFromSuperview];
@@ -51,7 +43,7 @@ static inline UILabel * labelWithAttributedText(NSAttributedString *attributedTe
 	_contentView = [[UIView alloc] init];
 	[self addSubview:_contentView];
 	
-    UILabel *lineLabel = labelWithAttributedText(_label.attributedText);
+	UILabel *lineLabel = [UILabel labelWithAttributedText:_label.attributedText];
     lineLabel.textAlignment = _label.textAlignment;
 	
 	const CGFloat textHeight = lineLabel.frame.size.height;
@@ -82,6 +74,9 @@ static inline UILabel * labelWithAttributedText(NSAttributedString *attributedTe
 			index += lineLabel.attributedText.length;
 			if (_label.numberOfLines == (currentLine + 1) ||
 				index >= _label.attributedText.length) {
+				index -= lineLabel.attributedText.length;
+				lineLabel.attributedText = [_label.attributedText
+											attributedSubstringFromRange:NSMakeRange(index, _label.attributedText.length - index)];
 				break;
 			}
             
@@ -96,13 +91,19 @@ static inline UILabel * labelWithAttributedText(NSAttributedString *attributedTe
 			
 			currentLine++;
 			
-			lineLabel = labelWithAttributedText([_label.attributedText
-                                                 attributedSubstringFromRange:NSMakeRange(index, _label.attributedText.length - index)]);
+			lineLabel = [UILabel labelWithAttributedText:[_label.attributedText
+														  attributedSubstringFromRange:NSMakeRange(index, _label.attributedText.length - index)]];
             lineLabel.textAlignment = _label.textAlignment;
 			[_contentView addSubview:lineLabel];
 		}
+		[lineLabel sizeToFit];
 	}
-	[lineLabel sizeToFit];
+	
+	if (CGRectGetMaxX(lineLabel.frame) > size.width) {
+		CGRect frame = lineLabel.frame;
+		frame.size.width = size.width - frame.origin.x;
+		lineLabel.frame = frame;
+	}
 	
 	if (_tailImageView) {
 		[_contentView addSubview:_tailImageView];
@@ -134,52 +135,6 @@ static inline UILabel * labelWithAttributedText(NSAttributedString *attributedTe
 	_contentView.frame = frame;
 	
 	[self sendSubviewToBack:_contentView];
-}
-
-@end
-
-
-//MARK: -
-
-@implementation UILabel (CutText)
-
-- (void)cutAttributedTextWithWidth
-{
-	NSAttributedString *str = self.attributedText;
-	if (str.length == 0)
-		return;
-	
-	CGFloat width = CGRectGetWidth(self.frame), textWidth;
-
-    NSInteger max = [str length];
-	textWidth = self.frame.size.width;
-    
-	UILabel *label = [[UILabel alloc] init];
-    if (width <= textWidth) {
-        NSInteger newMax = max * width / textWidth;
-        for (max = newMax; max <= [str length]; max++) {
-			label.attributedText = [str attributedSubstringFromRange:NSMakeRange(0, max)];
-			[label sizeToFit];
-			textWidth = label.frame.size.width;
-
-            if (width < textWidth) {
-                max--;
-                break;
-            }
-        }
-
-        if (newMax > max) {
-            do {
-                label.attributedText = [str attributedSubstringFromRange:NSMakeRange(0, max)];
-				[label sizeToFit];
-				textWidth = label.frame.size.width;
-            } while (width <= textWidth && max-- >= 0);
-        }
-    }
-
-    max = MAX(0, MIN(max, str.length));
-
-	self.attributedText = [str attributedSubstringFromRange:NSMakeRange(0, max)];
 }
 
 @end

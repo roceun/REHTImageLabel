@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1CF8177A3B6186E5CF7857817F14CF7A /* REHTImageLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3BB1D6CB18E508A8808571D868D7B4 /* REHTImageLabel.m */; };
+		20B1692C5E436F15197052146A5AB6A1 /* REHTImageArrayLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E53E0861A187F96731C9E14114727C /* REHTImageArrayLabel.m */; };
+		24B3C580088B9F845FCFB5F5D79C9A3E /* UILabel+RECutText.m in Sources */ = {isa = PBXBuildFile; fileRef = 9498F4818A52EF17B9ADC7512715B23A /* UILabel+RECutText.m */; };
 		32D9F9F4D8B05EEF8EF1F631952E48E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		4ECCBB3BC310025AE6AD2410F4F012A4 /* REHTImageLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 962A9E26579367C89B0F08E504E0DD37 /* REHTImageLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		68EA2B08ED41984C905656C8280616F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		80AC1BA861F1F8762484A626EB64F014 /* REHTImageLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = BD070C189C7909FC912BF331D794D2F1 /* REHTImageLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35B1D7115141196779E8992D3709C9C5 /* REHTImageLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E20A68555E2D3137BD1DBB68D1FC19 /* REHTImageLabel.m */; };
 		819B750A17C7782852766F1042A217DF /* Pods-REHTImageLabel_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F33A63BE95F7F9A84245A3EDEED4B29 /* Pods-REHTImageLabel_Tests-dummy.m */; };
+		96FCB2296936A9DE34287B4FF255BD88 /* REHTImageLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B88B896CCFB3A073C306B5B5CF7A0152 /* REHTImageLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C18D5A1B5FA5DDC81678A8BA2E64480 /* Pods-REHTImageLabel_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9645035C49DFE0EC63FEEF5B3CC70E /* Pods-REHTImageLabel_Example-dummy.m */; };
-		9DA516CD5FD1B06F949C96B2BEBF5BD1 /* REHTImageLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B993599C60D884965CC6BA3C54A7F0 /* REHTImageLabel-dummy.m */; };
+		A2B7268ABEF294605DA73863FD7C47B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		B8B62C243A5BAB7006986C30BD086F10 /* UILabel+RECutText.h in Headers */ = {isa = PBXBuildFile; fileRef = CEEFC4C6FAF9C502716B56D6A221EDCB /* UILabel+RECutText.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB7B188D0BB4B250433D6B6F0C7BE244 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		BDF4F726BA415998805DF09DEB2BFB22 /* REHTImageArrayLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 28862CF9118B9F47DDAC4A937C987E20 /* REHTImageArrayLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2AFB9407907D3ACE24F45B5A2D09CAB /* REHTImageLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FE7929B2DBE6AB60B47C72720689DB7 /* REHTImageLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C3CCF06DAF278BA0912D5074E697FB42 /* Pods-REHTImageLabel_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47E8C1381A837044549CE30609CC0C5C /* Pods-REHTImageLabel_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6AD4B6B6D45E061C31C53A33C18D523 /* REHTImageLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F9BB480CF5B164222455AEEF7CEA8F /* REHTImageLabel-dummy.m */; };
 		F03776EA6F5D366CE60B2CFE210C8DE5 /* Pods-REHTImageLabel_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CB5D5689BCE19D645A87A1185F932E0 /* Pods-REHTImageLabel_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -38,37 +42,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0091017FC5D2C42C413FABCB27163E83 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		10F46B82D0EBD8F6F59006967B658975 /* REHTImageLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = REHTImageLabel.xcconfig; sourceTree = "<group>"; };
+		10F9BB480CF5B164222455AEEF7CEA8F /* REHTImageLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "REHTImageLabel-dummy.m"; sourceTree = "<group>"; };
 		127EA1534245735FF2A3F3E1F1E074E6 /* Pods-REHTImageLabel_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-REHTImageLabel_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		1C6F624804DA33874E8D10EAB9C12BD2 /* Pods-REHTImageLabel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-REHTImageLabel_Example.release.xcconfig"; sourceTree = "<group>"; };
+		22B024BE635F3E853E22C73786B26F30 /* REHTImageLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "REHTImageLabel-prefix.pch"; sourceTree = "<group>"; };
+		28862CF9118B9F47DDAC4A937C987E20 /* REHTImageArrayLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = REHTImageArrayLabel.h; path = REHTImageLabel/Classes/REHTImageArrayLabel.h; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3D3BB1D6CB18E508A8808571D868D7B4 /* REHTImageLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = REHTImageLabel.m; path = REHTImageLabel/Classes/REHTImageLabel.m; sourceTree = "<group>"; };
+		467ECE4CE151D3E63889D31CD7DF4315 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		47E8C1381A837044549CE30609CC0C5C /* Pods-REHTImageLabel_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-REHTImageLabel_Example-umbrella.h"; sourceTree = "<group>"; };
-		4AD894DB455B95B3BB32506758BCA9F1 /* REHTImageLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = REHTImageLabel.xcconfig; sourceTree = "<group>"; };
 		4CB5D5689BCE19D645A87A1185F932E0 /* Pods-REHTImageLabel_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-REHTImageLabel_Tests-umbrella.h"; sourceTree = "<group>"; };
 		578104C88337F29CE6BFB31D251FFC5F /* Pods-REHTImageLabel_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-REHTImageLabel_Example-Info.plist"; sourceTree = "<group>"; };
-		584419928EA5D745995E2F61503892CC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		61B993599C60D884965CC6BA3C54A7F0 /* REHTImageLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "REHTImageLabel-dummy.m"; sourceTree = "<group>"; };
 		691E4D9E89D96F6C5411A5F4E2AEED55 /* Pods-REHTImageLabel_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-REHTImageLabel_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6B7BF1A6104CAD0CA6BC9D686191B1B7 /* REHTImageLabel.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = REHTImageLabel.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6FE7929B2DBE6AB60B47C72720689DB7 /* REHTImageLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = REHTImageLabel.h; path = REHTImageLabel/Classes/REHTImageLabel.h; sourceTree = "<group>"; };
 		7F33A63BE95F7F9A84245A3EDEED4B29 /* Pods-REHTImageLabel_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-REHTImageLabel_Tests-dummy.m"; sourceTree = "<group>"; };
 		870725A3B3CF200C29D3DB29C1A12AAB /* Pods_REHTImageLabel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_REHTImageLabel_Tests.framework; path = "Pods-REHTImageLabel_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90017BC2C7853A6FCC5EC141C7D76DD4 /* Pods-REHTImageLabel_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-REHTImageLabel_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		91FD91DCC892972C3E4598AD8D7AF2EC /* REHTImageLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "REHTImageLabel-prefix.pch"; sourceTree = "<group>"; };
+		9498F4818A52EF17B9ADC7512715B23A /* UILabel+RECutText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+RECutText.m"; path = "REHTImageLabel/Classes/UILabel+RECutText.m"; sourceTree = "<group>"; };
 		94C364DE39D8058B3480E6383D403B2B /* Pods_REHTImageLabel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_REHTImageLabel_Example.framework; path = "Pods-REHTImageLabel_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		962A9E26579367C89B0F08E504E0DD37 /* REHTImageLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "REHTImageLabel-umbrella.h"; sourceTree = "<group>"; };
 		9A7DC6DBB99450D03FD0F80A27D502CC /* Pods-REHTImageLabel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-REHTImageLabel_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9CB0B30D37D8374F9928DFFF54C8900F /* REHTImageLabel.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = REHTImageLabel.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E621A55EE77D469B9F0DC4F8F12A811 /* REHTImageLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = REHTImageLabel.framework; path = REHTImageLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A429350A4728E990CB043C546B4BFF24 /* Pods-REHTImageLabel_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-REHTImageLabel_Tests.modulemap"; sourceTree = "<group>"; };
-		ACB828656C829CEA4DAF876D2E7362C5 /* REHTImageLabel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "REHTImageLabel-Info.plist"; sourceTree = "<group>"; };
+		B7E53E0861A187F96731C9E14114727C /* REHTImageArrayLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = REHTImageArrayLabel.m; path = REHTImageLabel/Classes/REHTImageArrayLabel.m; sourceTree = "<group>"; };
+		B88B896CCFB3A073C306B5B5CF7A0152 /* REHTImageLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "REHTImageLabel-umbrella.h"; sourceTree = "<group>"; };
+		B8B5935306F892E675309C762A224436 /* REHTImageLabel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "REHTImageLabel-Info.plist"; sourceTree = "<group>"; };
 		B9DAA65C6EF0824E2C54F95C3B91E030 /* Pods-REHTImageLabel_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-REHTImageLabel_Tests-Info.plist"; sourceTree = "<group>"; };
-		BD070C189C7909FC912BF331D794D2F1 /* REHTImageLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = REHTImageLabel.h; path = REHTImageLabel/Classes/REHTImageLabel.h; sourceTree = "<group>"; };
+		BE1132C29898DD2871D6D03A3F74B40B /* REHTImageLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = REHTImageLabel.modulemap; sourceTree = "<group>"; };
 		BE9645035C49DFE0EC63FEEF5B3CC70E /* Pods-REHTImageLabel_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-REHTImageLabel_Example-dummy.m"; sourceTree = "<group>"; };
-		C319ABBC05868EAEF7B0EBDB56DA9207 /* REHTImageLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = REHTImageLabel.modulemap; sourceTree = "<group>"; };
 		C3A5C422B85113F5ACF9150EADA7739C /* Pods-REHTImageLabel_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-REHTImageLabel_Example.modulemap"; sourceTree = "<group>"; };
+		CEEFC4C6FAF9C502716B56D6A221EDCB /* UILabel+RECutText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+RECutText.h"; path = "REHTImageLabel/Classes/UILabel+RECutText.h"; sourceTree = "<group>"; };
+		D1E20A68555E2D3137BD1DBB68D1FC19 /* REHTImageLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = REHTImageLabel.m; path = REHTImageLabel/Classes/REHTImageLabel.m; sourceTree = "<group>"; };
 		D76E2984C19367A2F27D0F77F3D34455 /* Pods-REHTImageLabel_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-REHTImageLabel_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E700616A3FA6B6BE59F9386E42E7A608 /* Pods-REHTImageLabel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-REHTImageLabel_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E9284E00C3B90473265F4F18D7618C90 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		EDA78AF388FDA372A86F6DA14D77C4A2 /* Pods-REHTImageLabel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-REHTImageLabel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F34636ED64E18BC02FB382EC53A780F4 /* Pods-REHTImageLabel_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-REHTImageLabel_Example-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,11 +98,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		38A1D3C43E6A5BAD667FD132A55D3361 /* Frameworks */ = {
+		66441B533540A27AF7D4D169B2E05F0A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68EA2B08ED41984C905656C8280616F7 /* Foundation.framework in Frameworks */,
+				A2B7268ABEF294605DA73863FD7C47B3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,28 +126,6 @@
 			path = "Target Support Files/Pods-REHTImageLabel_Example";
 			sourceTree = "<group>";
 		};
-		1C17B2853B9610921D1D43939D902410 /* REHTImageLabel */ = {
-			isa = PBXGroup;
-			children = (
-				BD070C189C7909FC912BF331D794D2F1 /* REHTImageLabel.h */,
-				3D3BB1D6CB18E508A8808571D868D7B4 /* REHTImageLabel.m */,
-				1FAFC844B61ABB6C5931CE3262158F37 /* Pod */,
-				9B073E8D6A4D5EEBB8C1495825B64A82 /* Support Files */,
-			);
-			name = REHTImageLabel;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		1FAFC844B61ABB6C5931CE3262158F37 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				E9284E00C3B90473265F4F18D7618C90 /* LICENSE */,
-				584419928EA5D745995E2F61503892CC /* README.md */,
-				9CB0B30D37D8374F9928DFFF54C8900F /* REHTImageLabel.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		359E4960881C37D913A9B412CBF63F75 /* Pods-REHTImageLabel_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,20 +140,6 @@
 			);
 			name = "Pods-REHTImageLabel_Tests";
 			path = "Target Support Files/Pods-REHTImageLabel_Tests";
-			sourceTree = "<group>";
-		};
-		9B073E8D6A4D5EEBB8C1495825B64A82 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C319ABBC05868EAEF7B0EBDB56DA9207 /* REHTImageLabel.modulemap */,
-				4AD894DB455B95B3BB32506758BCA9F1 /* REHTImageLabel.xcconfig */,
-				61B993599C60D884965CC6BA3C54A7F0 /* REHTImageLabel-dummy.m */,
-				ACB828656C829CEA4DAF876D2E7362C5 /* REHTImageLabel-Info.plist */,
-				91FD91DCC892972C3E4598AD8D7AF2EC /* REHTImageLabel-prefix.pch */,
-				962A9E26579367C89B0F08E504E0DD37 /* REHTImageLabel-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/REHTImageLabel";
 			sourceTree = "<group>";
 		};
 		BA2709C9D938DFBD14D0192E636AB606 /* Targets Support Files */ = {
@@ -191,7 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D366F2A011424696D45AECDCAADB55F2 /* Development Pods */,
+				DDC6563AE67882F3B9536C4EACC0B586 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				FEF36E12C6D469DCB77090C0DEF95559 /* Products */,
 				BA2709C9D938DFBD14D0192E636AB606 /* Targets Support Files */,
@@ -206,12 +178,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D366F2A011424696D45AECDCAADB55F2 /* Development Pods */ = {
+		DDC6563AE67882F3B9536C4EACC0B586 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1C17B2853B9610921D1D43939D902410 /* REHTImageLabel */,
+				FEF58D9A68ADB3CF61491DFC5D7CA7FE /* REHTImageLabel */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		DDE17E2D4EDE721FAC10D625D64C0FBB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE1132C29898DD2871D6D03A3F74B40B /* REHTImageLabel.modulemap */,
+				10F46B82D0EBD8F6F59006967B658975 /* REHTImageLabel.xcconfig */,
+				10F9BB480CF5B164222455AEEF7CEA8F /* REHTImageLabel-dummy.m */,
+				B8B5935306F892E675309C762A224436 /* REHTImageLabel-Info.plist */,
+				22B024BE635F3E853E22C73786B26F30 /* REHTImageLabel-prefix.pch */,
+				B88B896CCFB3A073C306B5B5CF7A0152 /* REHTImageLabel-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/REHTImageLabel";
+			sourceTree = "<group>";
+		};
+		ECF6C06BC61B68DF19DFF6F8AB59111C /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				0091017FC5D2C42C413FABCB27163E83 /* LICENSE */,
+				467ECE4CE151D3E63889D31CD7DF4315 /* README.md */,
+				6B7BF1A6104CAD0CA6BC9D686191B1B7 /* REHTImageLabel.podspec */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		FEF36E12C6D469DCB77090C0DEF95559 /* Products */ = {
@@ -224,18 +220,25 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		FEF58D9A68ADB3CF61491DFC5D7CA7FE /* REHTImageLabel */ = {
+			isa = PBXGroup;
+			children = (
+				28862CF9118B9F47DDAC4A937C987E20 /* REHTImageArrayLabel.h */,
+				B7E53E0861A187F96731C9E14114727C /* REHTImageArrayLabel.m */,
+				6FE7929B2DBE6AB60B47C72720689DB7 /* REHTImageLabel.h */,
+				D1E20A68555E2D3137BD1DBB68D1FC19 /* REHTImageLabel.m */,
+				CEEFC4C6FAF9C502716B56D6A221EDCB /* UILabel+RECutText.h */,
+				9498F4818A52EF17B9ADC7512715B23A /* UILabel+RECutText.m */,
+				ECF6C06BC61B68DF19DFF6F8AB59111C /* Pod */,
+				DDE17E2D4EDE721FAC10D625D64C0FBB /* Support Files */,
+			);
+			name = REHTImageLabel;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		06BD849150D4CADB43DC7416AA043178 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4ECCBB3BC310025AE6AD2410F4F012A4 /* REHTImageLabel-umbrella.h in Headers */,
-				80AC1BA861F1F8762484A626EB64F014 /* REHTImageLabel.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		46F079FEDF133E390E8B285D5F32DA87 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -249,6 +252,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F03776EA6F5D366CE60B2CFE210C8DE5 /* Pods-REHTImageLabel_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FF93EBEB27C98A46571CAFF694B4D07 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDF4F726BA415998805DF09DEB2BFB22 /* REHTImageArrayLabel.h in Headers */,
+				96FCB2296936A9DE34287B4FF255BD88 /* REHTImageLabel-umbrella.h in Headers */,
+				C2AFB9407907D3ACE24F45B5A2D09CAB /* REHTImageLabel.h in Headers */,
+				B8B62C243A5BAB7006986C30BD086F10 /* UILabel+RECutText.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,12 +309,12 @@
 		};
 		EC9822D6A1904FF614FE7A7DCA1DD616 /* REHTImageLabel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 50F8596943DA3DFB1A76B2288C738668 /* Build configuration list for PBXNativeTarget "REHTImageLabel" */;
+			buildConfigurationList = CEE217653A922A86C9A594BAFF6EB455 /* Build configuration list for PBXNativeTarget "REHTImageLabel" */;
 			buildPhases = (
-				06BD849150D4CADB43DC7416AA043178 /* Headers */,
-				8302C7C8DB0BE7D73C26E6BCD33CC26E /* Sources */,
-				38A1D3C43E6A5BAD667FD132A55D3361 /* Frameworks */,
-				B3C20A2DD6982A4F517E15DFA715202B /* Resources */,
+				4FF93EBEB27C98A46571CAFF694B4D07 /* Headers */,
+				75A6F52DDF3AF16F11251AE8B181ED36 /* Sources */,
+				66441B533540A27AF7D4D169B2E05F0A /* Frameworks */,
+				268EA44549A2C66C58139A749C8912D9 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -347,14 +361,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		69511778B990B6BDF09864873A19E985 /* Resources */ = {
+		268EA44549A2C66C58139A749C8912D9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B3C20A2DD6982A4F517E15DFA715202B /* Resources */ = {
+		69511778B990B6BDF09864873A19E985 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -372,12 +386,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8302C7C8DB0BE7D73C26E6BCD33CC26E /* Sources */ = {
+		75A6F52DDF3AF16F11251AE8B181ED36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DA516CD5FD1B06F949C96B2BEBF5BD1 /* REHTImageLabel-dummy.m in Sources */,
-				1CF8177A3B6186E5CF7857817F14CF7A /* REHTImageLabel.m in Sources */,
+				20B1692C5E436F15197052146A5AB6A1 /* REHTImageArrayLabel.m in Sources */,
+				C6AD4B6B6D45E061C31C53A33C18D523 /* REHTImageLabel-dummy.m in Sources */,
+				35B1D7115141196779E8992D3709C9C5 /* REHTImageLabel.m in Sources */,
+				24B3C580088B9F845FCFB5F5D79C9A3E /* UILabel+RECutText.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,38 +450,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		77194D8E25A6335A5EB6C618D44A743E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AD894DB455B95B3BB32506758BCA9F1 /* REHTImageLabel.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/REHTImageLabel/REHTImageLabel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/REHTImageLabel/REHTImageLabel-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/REHTImageLabel/REHTImageLabel.modulemap";
-				PRODUCT_MODULE_NAME = REHTImageLabel;
-				PRODUCT_NAME = REHTImageLabel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -600,37 +584,6 @@
 			};
 			name = Release;
 		};
-		8F82D08E0ED3226EB947D4A7E2224669 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AD894DB455B95B3BB32506758BCA9F1 /* REHTImageLabel.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/REHTImageLabel/REHTImageLabel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/REHTImageLabel/REHTImageLabel-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/REHTImageLabel/REHTImageLabel.modulemap";
-				PRODUCT_MODULE_NAME = REHTImageLabel;
-				PRODUCT_NAME = REHTImageLabel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		916E0404255105F480DC4950B7625F7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -695,6 +648,38 @@
 			};
 			name = Debug;
 		};
+		991B4714BDCA2B901C4DBDC4FE55E1A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10F46B82D0EBD8F6F59006967B658975 /* REHTImageLabel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/REHTImageLabel/REHTImageLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/REHTImageLabel/REHTImageLabel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/REHTImageLabel/REHTImageLabel.modulemap";
+				PRODUCT_MODULE_NAME = REHTImageLabel;
+				PRODUCT_NAME = REHTImageLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		CDA74CBEC307F7148025679B56071D24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EDA78AF388FDA372A86F6DA14D77C4A2 /* Pods-REHTImageLabel_Tests.debug.xcconfig */;
@@ -728,6 +713,37 @@
 			};
 			name = Debug;
 		};
+		F97105266A160AEE8BFE8F3318136C69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10F46B82D0EBD8F6F59006967B658975 /* REHTImageLabel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/REHTImageLabel/REHTImageLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/REHTImageLabel/REHTImageLabel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/REHTImageLabel/REHTImageLabel.modulemap";
+				PRODUCT_MODULE_NAME = REHTImageLabel;
+				PRODUCT_NAME = REHTImageLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -740,20 +756,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		50F8596943DA3DFB1A76B2288C738668 /* Build configuration list for PBXNativeTarget "REHTImageLabel" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8F82D08E0ED3226EB947D4A7E2224669 /* Debug */,
-				77194D8E25A6335A5EB6C618D44A743E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		80D22F9024DDF805B8929BAA30CCB6A1 /* Build configuration list for PBXNativeTarget "Pods-REHTImageLabel_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CDA74CBEC307F7148025679B56071D24 /* Debug */,
 				80A1CC9557E7224BBF4DD8EDF070D058 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEE217653A922A86C9A594BAFF6EB455 /* Build configuration list for PBXNativeTarget "REHTImageLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F97105266A160AEE8BFE8F3318136C69 /* Debug */,
+				991B4714BDCA2B901C4DBDC4FE55E1A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
