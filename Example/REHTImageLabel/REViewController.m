@@ -31,7 +31,7 @@
 	UILabel *label = [[UILabel alloc] init];
 	label.attributedText = [[NSAttributedString alloc] initWithString:string
 														   attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:15]}];
-	label.numberOfLines = 0;
+	label.numberOfLines = 2;
 	imageLabel.label = label;
 	
 	UIImageView *headImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];

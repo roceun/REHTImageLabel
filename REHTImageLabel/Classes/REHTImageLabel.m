@@ -112,7 +112,7 @@ static inline UILabel * labelWithAttributedText(NSAttributedString *attributedTe
 		if (size.width - offsetX < _tailImageView.frame.size.width) {
 			if (_label.numberOfLines == currentLine + 1) {
 				CGRect frame = lineLabel.frame;
-				frame.size.width = frame.size.width - _tailImageView.frame.size.width - _tailMargin;
+				frame.size.width = size.width - frame.origin.x - _tailImageView.frame.size.width - _tailMargin;
 				lineLabel.frame = frame;
 				
 				offsetX = lineLabel.frame.origin.x + lineLabel.frame.size.width + _tailMargin;
