@@ -118,7 +118,7 @@ static inline UILabel * labelWithAttributedText(NSAttributedString *attributedTe
 				offsetX = lineLabel.frame.origin.x + lineLabel.frame.size.width + _tailMargin;
 			} else {
 				offsetX = 0;
-				offsetY += _tailImageView.frame.size.height;
+				offsetY += (textHeight + _lineMargin);
 			}
 		}
 		_tailImageView.frame = (CGRect){CGPointMake(offsetX, offsetY), _tailImageView.frame.size};
