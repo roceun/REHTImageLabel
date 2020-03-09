@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface REHTImageLabel : UIView
 
 @property (nullable, nonatomic, strong) UIImageView *headImageView;
-@property (nullable, nonatomic, strong) UILabel *label; // support textAlignment, lineBreakMode, numberOfLines
+@property (nullable, nonatomic, strong) UILabel *label; // support lineBreakMode, numberOfLines
 @property (nullable, nonatomic, strong) UIImageView *tailImageView;
 
 @property (nonatomic, assign) CGFloat lineMargin;

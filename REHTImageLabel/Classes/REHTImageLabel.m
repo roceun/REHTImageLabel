@@ -44,7 +44,6 @@
 	[self addSubview:_contentView];
 	
 	UILabel *lineLabel = [UILabel labelWithAttributedText:_label.attributedText];
-    lineLabel.textAlignment = _label.textAlignment;
 	
 	const CGFloat textHeight = lineLabel.frame.size.height;
 	
@@ -93,7 +92,6 @@
 			
 			lineLabel = [UILabel labelWithAttributedText:[_label.attributedText
 														  attributedSubstringFromRange:NSMakeRange(index, _label.attributedText.length - index)]];
-            lineLabel.textAlignment = _label.textAlignment;
 			[_contentView addSubview:lineLabel];
 		}
 		[lineLabel sizeToFit];
@@ -126,9 +124,9 @@
 	}
 	
 	if (lineLabel.frame.origin.y == 0) {
-		size.width = CGRectGetMaxX(lineLabel.frame) + CGRectGetWidth(_tailImageView.frame);
+		size.width = CGRectGetMaxX(lineLabel.frame) + CGRectGetWidth(_tailImageView.frame) + _tailMargin;
 	}
-	size.height = MAX(CGRectGetMaxY(_tailImageView.frame), CGRectGetMaxY(lineLabel.frame));
+	size.height = CGRectGetMaxY(lineLabel.frame) + _lineMargin;
 	
 	CGRect frame = _contentView.frame;
 	frame.size = size;

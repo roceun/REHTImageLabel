@@ -44,7 +44,6 @@
 	[self addSubview:_contentView];
 	
 	UILabel *lineLabel = [UILabel labelWithAttributedText:_label.attributedText];
-    lineLabel.textAlignment = _label.textAlignment;
 	
 	const CGFloat textHeight = lineLabel.frame.size.height;
 	
@@ -120,7 +119,6 @@
 				
 				lineLabel = [UILabel labelWithAttributedText:[_label.attributedText
 															  attributedSubstringFromRange:NSMakeRange(index, _label.attributedText.length - index)]];
-				lineLabel.textAlignment = _label.textAlignment;
 				[_contentView addSubview:lineLabel];
 			}
 			[lineLabel sizeToFit];

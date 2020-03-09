@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'REHTImageLabel'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Label with head/tail imageview.'
   s.homepage         = 'https://github.com/roceun/REHTImageLabel'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

@@ -1,5 +1,5 @@
 PODS:
-  - REHTImageLabel (1.0.0)
+  - REHTImageLabel (1.0.1)
 
 DEPENDENCIES:
   - REHTImageLabel (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  REHTImageLabel: 9ad21e0d5e3d1cb1eee2c6861b5c239a3129e549
+  REHTImageLabel: c2faffde1e48761558f4968bac7b45176de65e85
 
 PODFILE CHECKSUM: a06246c30ded23ba4dd8e3e97edf17e54c30282e
 
