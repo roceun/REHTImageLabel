@@ -4,6 +4,8 @@
 [![License](https://img.shields.io/cocoapods/l/REHTImageLabel.svg?style=flat)](https://cocoapods.org/pods/REHTImageLabel)
 [![Platform](https://img.shields.io/cocoapods/p/REHTImageLabel.svg?style=flat)](https://cocoapods.org/pods/REHTImageLabel)
 
+![sample](sample.png)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
