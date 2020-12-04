@@ -126,7 +126,7 @@
 	if (lineLabel.frame.origin.y == 0) {
 		size.width = CGRectGetMaxX(lineLabel.frame) + CGRectGetWidth(_tailImageView.frame) + _tailMargin;
 	}
-	size.height = CGRectGetMaxY(lineLabel.frame) + _lineMargin;
+	size.height = CGRectGetMaxY((_tailImageView ?: lineLabel).frame) + _lineMargin;
 	
 	CGRect frame = _contentView.frame;
 	frame.size = size;
