@@ -1,5 +1,5 @@
 PODS:
-  - REHTImageLabel (1.0.1)
+  - REHTImageLabel (1.0.2)
 
 DEPENDENCIES:
   - REHTImageLabel (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  REHTImageLabel: c2faffde1e48761558f4968bac7b45176de65e85
+  REHTImageLabel: f0e407e6e5efae134d614bd0499d3c8b0f898209
 
 PODFILE CHECKSUM: a06246c30ded23ba4dd8e3e97edf17e54c30282e
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.3
